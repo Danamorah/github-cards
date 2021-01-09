@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev:bundler": "webpack -w --mode=development"
   },
   "keywords": [],
   "author": "dmorah.com",
@@ -18,5 +20,13 @@
     "express": "^4.17.1",
     "webpack": "^5.12.1",
     "webpack-cli": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.7",
+    "prettier": "2.2.1"
   }
 }

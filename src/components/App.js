@@ -1,4 +1,5 @@
 import React from 'react';
+//import '../../main.css'
 import Card from './Card'
 
 class App extends React.Component {
@@ -11,6 +12,8 @@ class App extends React.Component {
     ) 
   }
 }
+
+export default App
 
 // export default function App({title}) {
 //   return (

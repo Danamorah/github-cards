@@ -9,12 +9,13 @@ class App extends React.Component {
       profiles: testData
     }
   }
+
   render(){
     return (
       <>
       <div className="header">{this.props.title}</div>
       <Form/>
-      <CardList profiles={testData}/>
+      <CardList profiles={this.state.profiles}/>
       </>
     ) 
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-//import '../../main.css'
 import Card from './Card'
 
 class App extends React.Component {

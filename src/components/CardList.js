@@ -1,11 +1,10 @@
 import React from 'react'
 import Card from './Card'
-import testData from '../testData'
 
-const CardList = () => {
+const CardList = (props) => {
   return(
     <div>
-      {testData.map((profile, index) =>
+      {props.profiles.map((profile, index) =>
         <Card key={index} {...profile}/>)}
       {/* <Card {...testData[0]} /> */}
       {/* when we use the spread operator in an object like this in the react component 
